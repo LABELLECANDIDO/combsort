@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="menu">
+        <a href="#" onclick="showTab(1)">Combo Sort</a>
+        <a href="#" onclick="showTab(2)">codigo</a>
+        <a href="#" onclick="showTab(3)">Performance</a>
+        <a href="#" onclick="showTab(4)">animação</a>
+        <a href="#" onclick="showTab(5)">Referência</a>
+    </div>
+
+    <div id="content">
+        <div class="tab" id="tab1">
+            <h2>Combo Sort</h2>
+            <br>
+            <p>O algoritmo Comb sort (ou Combo sort ou ainda algoritmo do pente[1]) é um algoritmo de ordenação
+                relativamente simples, e faz parte da família de algoritmos de ordenação por troca. Foi desenvolvido em
+                1980 por Wlodzimierz Dobosiewicz. Mais tarde, foi redescoberto e popularizado por Stephen Lacey e
+                Richard Box em um artigo publicado na revista Byte em Abril de 1991. O Comb sort melhora o Bubble sort,
+                e rivaliza com algoritmos como o Quicksort. A ideia básica é eliminar as tartarugas ou pequenos valores
+                próximos do final da lista, já que em um bubble sort estes retardam a classificação tremendamente.
+                (Coelhos, grandes valores em torno do início da lista, não representam um problema no bubble sort).</p>
+        </div>
+
+        <div class="tab" id="tab2">
+            <h2>codigo</h2>
+            <br>
+            <p>Tab 2 content goes here.</p>
+        </div>
+
+        <div class="tab" id="tab3">
+            <h2>Performance</h2>
+            <br>
+            <p>O Comb Sort é um algoritmo de classificação que foi projetado para melhorar o desempenho do Bubble Sort,
+                especialmente em casos onde o conjunto de dados não está completamente desorganizado. No entanto, embora
+                o Comb Sort seja um algoritmo de classificação relativamente simples e fácil de entender, seu desempenho
+                pode não ser o melhor em todos os cenários.
+<br>
+                A performance do Comb Sort pode ser resumida da seguinte forma:
+<br>
+                Complexidade de Tempo: O pior caso do Comb Sort tem uma complexidade de tempo de O(n^2), que é
+                semelhante ao Bubble Sort, tornando-o ineficiente para grandes conjuntos de dados não ordenados. No
+                entanto, em média, o Comb Sort é mais eficiente que o Bubble Sort, principalmente quando há poucas
+                inversões no conjunto de dados.
+<br>
+                Melhorias: O Comb Sort melhorou o desempenho do Bubble Sort ao introduzir um "fator de encolhimento" que
+                reduz o tamanho do passo usado para comparações e trocas à medida que o algoritmo avança. Isso ajuda a
+                eliminar pequenos valores no final da lista mais rapidamente do que o Bubble Sort.
+<br>
+                Casos específicos: O Comb Sort é geralmente mais eficiente do que o Bubble Sort, mas ainda é superado
+                por algoritmos de classificação mais avançados, como Quick Sort, Merge Sort e até mesmo o Tim Sort (que
+                é uma versão híbrida do Merge Sort e do Ordenação por Inserção). Portanto, em cenários onde o desempenho
+                é crítico, outros algoritmos são preferíveis.
+<br>
+                Espaço de Memória: O Comb Sort é um algoritmo in-place, o que significa que ele não requer memória
+                adicional para armazenar dados temporariamente, tornando-o eficiente em termos de uso de memória.
+<br>
+                Em resumo, o Comb Sort é um algoritmo de classificação que oferece uma melhoria sobre o Bubble Sort em
+                termos de desempenho médio, mas ainda é superado por algoritmos mais avançados em termos de eficiência e
+                rapidez em cenários com grandes conjuntos de dados desordenados. Portanto, sua utilização pode ser
+                adequada para tarefas simples de classificação, mas em situações onde o desempenho é crítico, outros
+                algoritmos de classificação são geralmente preferíveis.</p>
+        </div>
+        <div class="tab" id="tab4">
+            <h2>Performance 2</h2>
+            <br>
+            <p>Performance 2 content goes here.</p>
+        </div>
+        <div class="tab" id="tab5">
+            <h2>Referência</h2>
+            <br>
+            <p>Referência content goes here.</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
