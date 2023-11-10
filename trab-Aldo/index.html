@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Comb Sort</title>
+</head>
+
+<body style="font-family:calibri">
+    <!-- tag html informa ao navegador como ele deve interpretar o texto entre as tags
+	     Normalmente uma tag precisa ser aberta. Exemplo: <p> texto </p>
+
+	     h4 e h3 são títulos
+	     p cria paragrafo
+	     br coloca uma linha em branco (não tem fechamento)
+         b  negrito
+         i  itálico
+    -->
+
+    <h3>Faculdade Nova Roma</h3>
+    <h3><b>Disciplina: </b>Estrutura de Dados</h3>
+    <p><b>Aluno(s): </b>Artur Tabosa, Enzo Santiago, Labelle Cândido e Rafael Diniz</p>
+    <br>
+    <h2 align="center">MÉTODO DE ORDENAÇÃO <i>Comb Sort</i></h2>
+    <br>
+
+    <P size="+1" style="margin-left: 20px;"><b>FUNCIONAMENTO:</b></P>
+    <p style="margin-left: 20px;">O algoritmo Comb sort (ou Combo sort ou ainda algoritmo/classificação do pente) é um algoritmo de ordenação
+        relativamente simples, e faz parte da família de algoritmos de ordenação por troca. Foi desenvolvido em
+        1980 por Wlodzimierz Dobosiewicz e Artur Borowy. Mais tarde, foi redescoberto (e dado o nome de "Comb Sort") e popularizado 
+        por Stephen Lacey e Richard Box em um artigo publicado na revista Byte em Abril de 1991. O Comb sort melhora o Bubble sort,
+        rivaliza com algoritmos como o Quicksort, e encolhe cerca de 1,3x. A ideia básica é eliminar as "tartarugas" ou 
+        pequenos valores próximos do final da lista, já que em um bubble sort estes retardam a classificação tremendamente.
+        "Coelhos" ou grandes valores em torno do início da lista, não representam um problema no bubble sort.</b></p>
+    <p style="margin-left: 20px;">O Comb Sort é um algoritmo de classificação que foi projetado para melhorar o desempenho do Bubble Sort, especialmente em casos onde o conjunto de dados não está completamente desorganizado. No entanto, embora o Comb Sort seja um algoritmo de classificação relativamente simples e fácil de entender, seu desempenho pode não ser o melhor em todos os cenários.
+        A performance do Comb Sort pode ser resumida da seguinte forma:
+        Complexidade de Tempo: O pior caso do Comb Sort tem uma complexidade de tempo de O(n^2), que é semelhante ao Bubble Sort, tornando-o ineficiente para grandes conjuntos de dados não ordenados. No entanto, em média, o Comb Sort é mais eficiente que o Bubble Sort, principalmente quando há poucas inversões no conjunto de dados.
+        Melhorias: O Comb Sort melhorou o desempenho do Bubble Sort ao introduzir um "fator de encolhimento" que reduz o tamanho do passo usado para comparações e trocas à medida que o algoritmo avança. Isso ajuda a eliminar pequenos valores no final da lista mais rapidamente do que o Bubble Sort.
+        Casos específicos: O Comb Sort é geralmente mais eficiente do que o Bubble Sort, mas ainda é superado por algoritmos de classificação mais avançados, como Quick Sort, Merge Sort e até mesmo o Tim Sort (que é uma versão híbrida do Merge Sort e do Ordenação por Inserção). Portanto, em cenários onde o desempenho é crítico, outros algoritmos são preferíveis.
+        Espaço de Memória: O Comb Sort é um algoritmo in-place, o que significa que ele não requer memória adicional para armazenar dados temporariamente, tornando-o eficiente em termos de uso de memória.
+        Em resumo, o Comb Sort é um algoritmo de classificação que oferece uma melhoria sobre o Bubble Sort em termos de desempenho médio, mas ainda é superado por algoritmos mais avançados em termos de eficiência e rapidez em cenários com grandes conjuntos de dados desordenados. Portanto, sua utilização pode ser adequada para tarefas simples de classificação, mas em situações onde o desempenho é crítico, outros algoritmos de classificação são geralmente preferíveis.</p>
+    <br>
+
+    <!-- div cria uma divisão para fins de agrupamento
+		 table cria uma tabela
+		 tr cria uma coluna na tabela
+		 td cria uma céluna na linha
+
+		img para inserir imagem
+		embed para inserir video
+		    src para informar o nome da imagem/video
+		    height para dimencionar a altura da imagem/video
+		    width  para dimensionar o largura da imagem/video
+		    autostart para definir se o vídeo deve tocar automaticamente
+	-->
+    <br>
+    <br>
+    <div align="center">
+        <CENTER>
+            <table border="1">
+                <tr align="center" height="40" style="background-color: #008080">
+                    <td><b style="color: white" ;>REPRESENTAÇÃO GRÁFICA</b></td>
+                    <td><b style="color: white" ;>ANIMAÇÃO</b></td>
+                    <td><b style="color: white" ;>VÍDEO</b></td>
+                </tr>
+                <tr align="center">
+                    <!-- coloque a imagem e a animação em uma sub pasta denominada img
+                         informe o nome da imagem e da animação nas linhas abaixo                    
+                    -->
+                    <td><img src="img/imagem.png" height="350"></td>
+                    <td><img src="img/animacao.gif" height="450"></td>
+
+                    <!-- coloque o vídeo em uma sub pasta denominada video
+                         informe o nome da imagem na linha abaixo                                 ´  ´  ´   ´  ´  ´  ´  ´  ´  ´
+                    -->
+                    <td><embed src="video/video.mp4" autostart="false" height="300" width="500"></td>
+                </tr>
+            </table>
+        </CENTER>
+    </div>
+    <br>
+    <br>
+
+    <!-- ul cria uma lista. 
+         li cria um item da lista
+    -->
+    <br>
+    <P style="margin-left: 20px;"><b>VANTAGENS:</b></P>
+    <ul style= "/*margin-right: 350px;*/ margin-left: 20px; text-align: justify;">
+        <li><b>Simplicidade de implementação:</b> O Comb Sort é relativamente simples de entender e implementar, o que o torna uma escolha atraente para situações em que a simplicidade é mais importante do que o desempenho máximo.</li>
+        <li><b>Boa performance em vetores parcialmente ordenados:</b> O Comb Sort é eficiente na ordenação de vetores parcialmente ordenados. Ele melhora significativamente a eficiência do Bubble Sort em vetores com pequenas inversões ou desordens.</li>
+        <li><b>Não requer memória adicional:</b> O Comb Sort é um algoritmo in-place, o que significa que ele não requer memória adicional para armazenar cópias temporárias dos elementos do vetor durante o processo de ordenação.</li>
+        <li><b>Melhora a eficiência do Bubble Sort:</b> O Comb Sort foi projetado para melhorar o desempenho do Bubble Sort, reduzindo o número de comparações e trocas em comparação com o Bubble Sort tradicional.</li>
+        <li><b>Adaptação à distribuição dos elementos:</b> O Comb Sort adapta o tamanho do "pulo" entre os elementos durante o processo de ordenação, o que o torna mais eficiente em vetores com distribuições diferentes de elementos, tornando-o mais versátil em comparação com algoritmos que usam um passo fixo.</li>
+    </ul>
+    <br>
+    <p style="margin-left: 20px;"><b>DESVANTAGENS:</b></p>
+    <ul style="/*margin-right: 350px;*/ margin-left: 20px; text-align: justify;">
+        <li><b>Desempenho inconsistente:</b> O desempenho do Comb Sort pode ser inconsistente, e sua complexidade de tempo é geralmente pior do que a de algoritmos mais eficientes, como o Quick Sort, Merge Sort e Heap Sort. Em algumas situações, o Comb Sort pode ser muito lento.</li>
+        <li><b>Complexidade de tempo média:</b> A complexidade de tempo média do Comb Sort é O(n^2), o que o torna menos eficiente do que muitos outros algoritmos de ordenação, especialmente em grandes conjuntos de dados.</li>
+        <li><b>Falta de estabilidade:</b> O Comb Sort não é um algoritmo de ordenação estável. Isso significa que, se dois elementos iguais forem trocados durante a ordenação, a ordem relativa deles no vetor pode não ser preservada.</li>
+        <li><b>Não é amplamente utilizado:</b> O Comb Sort não é amplamente adotado na indústria ou na comunidade acadêmica, o que significa que pode ser menos suportado e menos conhecido do que outros algoritmos de ordenação mais comuns.</li>
+        <li><b>Não é a escolha ideal em muitos cenários:</b> Para a maioria das aplicações, existem algoritmos de ordenação mais eficientes e estáveis disponíveis, como o Quick Sort, Merge Sort e outros, que geralmente são preferidos em relação ao Comb Sort devido ao seu melhor desempenho e confiabilidade.</li>
+    </ul>
+    <br>
+
+    <p style="margin-left: 20px;"><b>IMPLEMENTAÇÃO:</b></p>
+    <br>
+    <br>
+    <div align="center">
+        <!-- informe o nome da imagem com o código do método estudo -->
+        <img src="img/codigo.png" height="70%">
+        <br>
+    </div>
